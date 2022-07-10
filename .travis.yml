@@ -7,7 +7,7 @@ before_install:
   - docker build -t zielin/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true zielin/docker-react npm run test
+  - docker run -e CI=true zielin/docker-react npm run start
 
 deploy:
   provider: elasticbeanstalk
